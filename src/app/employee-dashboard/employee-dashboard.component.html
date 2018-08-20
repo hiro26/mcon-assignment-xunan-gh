@@ -5,7 +5,7 @@
       <h2>
         {{employee.name}}
       </h2>
-      <main *ngIf="selectedEmployee === employee">
+      <main *ngIf="selectedEmployee === employee" (click)="doSomething(employee)">
         <p>{{employee.address.suite}}</p>
         <p>{{employee.address.street}}</p>
         <p>{{employee.address.city}}</p>
