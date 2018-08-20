@@ -24,5 +24,6 @@ export class EmployeeDashboardComponent implements OnInit {
 
   toggleOnlyOne(employee: Employee) {
     this.selectedEmployee = employee;
+    alert(`You've sleected employee: ${employee.name}`);
   }
 }
