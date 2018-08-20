@@ -6,22 +6,32 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). NG CLI need to be instealled `npm install -g @angular/cli`
 
-## Running end-to-end tests
+## About MCON assignment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Functional Requirements:
 
-## Further help
+1. Each item has an employee name and bio content. ✓
+2. By default, bio content is hidden. ✓
+3. By clicking on the employee name, it expands/collapses the item's bio content. ✓
+4. Only one item can be expanded at a time (expanding one will collapse the others). ✓
+5. Additionally by clicking on the content, an action occurs (can be an alert with item data). TODO
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Non-functional requirements
+
+1. Unit tests are used to test the component's logic. ✓
+2. Angular JS framework is prefferred. Another JS Framework is fine as well. (Angular 6 used)
+3. Readable code is important. A standard for coding style is selected and maintained (eslint/jshint/...). Added descriptive comments where needed. ✓
+4. Use a Git repository (e.g. github) allows to check the history of the project. ✓
+5. Readme.MD is included with a description of the build process, and how to run the unit tests. ✓
+
+## Published page:
+
+https://hiro26.github.io/mcon-assignment-xunan-gh/
