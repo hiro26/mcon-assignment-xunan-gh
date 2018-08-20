@@ -22,7 +22,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 2. By default, bio content is hidden. ✓
 3. By clicking on the employee name, it expands/collapses the item's bio content. ✓
 4. Only one item can be expanded at a time (expanding one will collapse the others). ✓
-5. Additionally by clicking on the content, an action occurs (can be an alert with item data). TODO
+5. Additionally by clicking on the content, an action occurs (can be an alert with item data). ✓
 
 ### Non-functional requirements
 
