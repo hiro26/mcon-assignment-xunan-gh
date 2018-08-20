@@ -6,15 +6,26 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .employee-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 mat-card {
   margin: 8px;
   width: 180px;
   cursor: pointer;
+  transition: transform 0.3s ease, height 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }

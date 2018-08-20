@@ -1,14 +1,15 @@
 <div class="employee-dashboard">
   <h1>Dashboard</h1>
   <div class="employee-list">
-    <mat-card>
+    <mat-card *ngFor="let employee of employees" (click)="toggle(employee)">
       <h2>
-        employee name
+        {{employee.name}}
       </h2>
-      <main>
-        <p>line 1</p>
-        <p>line 2</p>
-        <p>line 3</p>
+      <main *ngIf="employee.expand">
+        <p>{{employee.address.suite}}</p>
+        <p>{{employee.address.street}}</p>
+        <p>{{employee.address.city}}</p>
+        <p>{{employee.address.zipcode}}</p>
       </main>
     </mat-card>
   </div>

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
   declarations: [AppComponent, EmployeeDashboardComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule
