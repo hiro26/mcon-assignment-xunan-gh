@@ -8,6 +8,7 @@ import { EmployeeService, Employee } from '../employee.service';
 })
 export class EmployeeDashboardComponent implements OnInit {
   employees: Employee[];
+  selectedEmployee: Employee;
 
   constructor(private employeeService: EmployeeService) {}
 
@@ -19,5 +20,9 @@ export class EmployeeDashboardComponent implements OnInit {
 
   toggle(employee: Employee) {
     employee.expand = !employee.expand;
+  }
+
+  toggleOnlyOne(employee: Employee) {
+    this.selectedEmployee = employee;
   }
 }

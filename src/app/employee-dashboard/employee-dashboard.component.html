@@ -1,11 +1,11 @@
 <div class="employee-dashboard">
   <h1>Dashboard</h1>
   <div class="employee-list">
-    <mat-card *ngFor="let employee of employees" (click)="toggle(employee)">
+    <mat-card *ngFor="let employee of employees" (click)="toggleOnlyOne(employee)">
       <h2>
         {{employee.name}}
       </h2>
-      <main *ngIf="employee.expand">
+      <main *ngIf="selectedEmployee === employee">
         <p>{{employee.address.suite}}</p>
         <p>{{employee.address.street}}</p>
         <p>{{employee.address.city}}</p>
